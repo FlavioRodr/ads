@@ -1,5 +1,10 @@
 #logo {
 	width: 100%;
 	min-width: 16px;
-	max-width: 62px;
+	max-width: 64px;	
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
 }

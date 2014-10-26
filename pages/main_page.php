@@ -5,10 +5,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-	 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
 
-<!-- Optional: Include the jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <script src="../js/bootstrap.min.js"></script>
@@ -17,19 +15,45 @@
 
 <link rel="stylesheet" type="text/css" href="../css/common.css">
 
+<style type="text/css">	
+	/*div { border: black solid 1px; }*/
+</style>
+
 </head>
 <body>
 	<header>
 		<div class="container">
-		 	<div class="row">	
-		 		 <div class="col-xs-2 col-xs-offset-5">	 		
-		 		 	<img id="logo" class="center-block" src="../images/logo.svg"> 
-		 		 </div>	
-		 	</div>
+			<div class="row vertical-align">
+				<div class="col-xs-2 col-sm-4 col-sm-offset-4">
+					<div class="row">	 		
+				 		 	<img id="logo" class="center-block" src="../images/logo.svg"> 
+			 		</div>
+				</div>		
+				
+				<div class="col-xs-6 visible-xs-block">	
+				 	<h4 class="text-center">Agenda de Serviços</h4>	
+				</div>
 
-		 	<div class="row">
-		 		<h4 class="text-center">Agenda de Serviços</h4>	
-		 	</div>
+				<div class="col-xs-4">
+					<div class="row">
+						<ul class="list-inline pull-right">
+							<li>
+								<span class="pull-right"><span class="glyphicon glyphicon-user"></span> &nbsp Bem vindo, João.</span>
+							</li>
+							<li>
+								<span class="pull-right"><span class="glyphicon glyphicon-log-out"></span> &nbsp Sair</span>
+							</li>					
+						</ul>
+						
+					</div>					
+				</div>
+			</div>	
+
+			<div class="row">
+				<div class="col-sm-12 hidden-xs">
+					<h3 class="text-center">Agenda de Serviços</h3>	
+				</div>				 	
+			</div>		
 		</div>
 	</header>
 	
