@@ -13,18 +13,28 @@
 
 <script src="../js/bootstrap.min.js"></script>
 
-<script type="text/javascript">
+<script type="text/javascript"></script>
 
-</script>
+<link rel="stylesheet" type="text/css" href="../css/common.css">
 
 </head>
 <body>
+	<header>
+		<div class="container">
+		 	<div class="row">	
+		 		 <div class="col-xs-2 col-xs-offset-5">	 		
+		 		 	<img id="logo" class="center-block" src="../images/logo.svg"> 
+		 		 </div>	
+		 	</div>
 
-<header>	
+		 	<div class="row">
+		 		<h4 class="text-center">Agenda de Serviços</h4>	
+		 	</div>
+		</div>
+	</header>
 	
-</header>
-<div role="main">
+	<div role="main">
+	</div>
 
-</div>
 </body>
 </html>
