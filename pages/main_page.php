@@ -49,8 +49,8 @@
 				</div>
 			</div>	
 
-			<div class="row">
-				<div class="col-sm-12 hidden-xs">
+			<div class="row hidden-xs">
+				<div class="col-sm-12">
 					<h3 class="text-center">Agenda de Serviços</h3>	
 				</div>				 	
 			</div>		

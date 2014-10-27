@@ -38,7 +38,8 @@ var setFocusOn = function($elem) {
 	 	</div>
 
 	 	<div class="row">
-	 		<h3 class="text-center">Agenda de Serviços</h3>	
+	 		<h3 class="text-center hidden-xs">Agenda de Serviços</h3>
+	 		<h4 class="text-center visible-xs-block">Agenda de Serviços</h4>	
 	 	</div>
 
 	 	<div class="row">	
