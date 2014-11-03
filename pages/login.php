@@ -117,7 +117,6 @@ var setFocusOn = function($elem) {
 					<div class="form-group">
 						<label class="control-label" for="passwordSecond">Repita a senha</label>
 						<input id="passwordSecond" name="passwordSecond" class="form-control" type="password">
-								 					
 					</div>
 
 					<div class="row">
