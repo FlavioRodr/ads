@@ -39,7 +39,7 @@
 
 					<div class="col-xs-12">
 						<p class="text-left">
-							<a class="btn btn-default btn-sm" href="#">Adicionar endereço</a>
+							<a id="add-address" data-toggle="modal" data-target="#modal-edit" class="btn btn-default btn-sm" href="#">Adicionar endereço</a>
 						</p>
 					</div>						
 
@@ -47,13 +47,35 @@
 						<div class="panel panel-default address">
 							<div class="panel-heading vcenter">
 								<span>Eduardo Frederico</span>		
-								<button type="button" class="pull-right btn btn-default btn-sm" 
+								<button type="button" class="delete pull-right btn btn-default btn-sm" 
 									data-toggle="modal" data-target="#modal-delete">
 									Excluir
 								</button>
 								
-								<button type="button" class="pull-right btn btn-default btn-sm" 
-									data-toggle="modal" data-target="#modal-edit" >
+								<button type="button" class="edit pull-right btn btn-default btn-sm" 
+									data-toggle="modal" data-target="#modal-edit">
+									Editar
+								</button>
+							</div>
+
+							<div class="panel-body">
+								<p>Av. José Vallim de Melo nº 116</p>
+								<p>Apartamento 302 Bloco b</p>
+								<p>Bairro Gameleira</p>
+							</div>
+						</div>						
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<div class="panel panel-default address">
+							<div class="panel-heading vcenter">
+								<span>Eduardo Frederico</span>		
+								<button type="button" class="delete pull-right btn btn-default btn-sm" 
+									data-toggle="modal" data-target="#modal-delete">
+									Excluir
+								</button>
+								
+								<button type="button" class="edit pull-right btn btn-default btn-sm" 
+									data-toggle="modal" data-target="#modal-edit">
 									Editar
 								</button>
 							</div>
@@ -74,7 +96,8 @@
 					<div class="modal-content">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal">&times</button>
-							<h4 class="modal-title">Editar Endereço</h4>
+							<h4 id="add-address-title" class="modal-title">Adicionar Endereço</h4>
+							<h4 id="edit-address-title" class="modal-title">Editar Endereço</h4>
 						</div>
 						<div class="modal-body">
 							<form class="form-horizontal" role="form">
@@ -134,17 +157,32 @@
 							<button type="button" class="close" data-dismiss="modal">&times</button>
 							<h4 class="modal-title">Excluir Endereço</h4>
 						</div>
-						<div class="modal-content">
-							
+						<div class="modal-body">
+							Tem certeza que deseja excluir esse endereço?
 						</div>
 						<div class="modal-footer">
-							
+							<button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+							<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
 						</div>
 					</div>
 				</div>		
 			</div>
 		</div>
 	</div>
+
+	<script type="text/javascript">
+		
+		$("#add-address").click(function(){
+			$("#add-address-title").show();
+			$("#edit-address-title").hide();
+		});
+
+		$("#load").find(".panel").find(".edit").click(function(){
+			$("#add-address-title").hide();
+			$("#edit-address-title").show();
+		});
+		
+	</script>
 
 </body>
 </html>
