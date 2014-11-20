@@ -65,7 +65,29 @@
 							</div>
 						</div>						
 					</div>
-					<div class="col-xs-12 col-md-6">
+					<div class="col-xs-12 col-md-6 ">
+						<div class="panel panel-default address">
+							<div class="panel-heading vcenter">
+								<span>Eduardo Frederico</span>		
+								<button type="button" class="delete pull-right btn btn-default btn-sm" 
+									data-toggle="modal" data-target="#modal-delete">
+									Excluir
+								</button>
+								
+								<button type="button" class="edit pull-right btn btn-default btn-sm" 
+									data-toggle="modal" data-target="#modal-edit">
+									Editar
+								</button>
+							</div>
+
+							<div class="panel-body">
+								<p>Av. José Vallim de Melo nº 116</p>
+								<p>Apartamento 302 Bloco b</p>
+								<p>Bairro Gameleira</p>
+							</div>
+						</div>						
+					</div>
+					<div class="col-xs-12 col-md-6 ">
 						<div class="panel panel-default address">
 							<div class="panel-heading vcenter">
 								<span>Eduardo Frederico</span>		

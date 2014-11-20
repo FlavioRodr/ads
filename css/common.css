@@ -12,6 +12,18 @@ header .navbar-brand
 	background-position: 5px 2px;
 }
 
+header #userinfo {
+	margin-top: 15px;
+	margin-right: 20px;
+}
+
+header #userinfo .glyphicon {
+	margin-right: 5px;
+}
+
+header #userinfo .glyphicon-log-out {
+	margin-left: 15px;
+}
 
 .vertical-align {
     display: flex;

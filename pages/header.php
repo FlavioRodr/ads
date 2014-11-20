@@ -1,6 +1,6 @@
 <header>
 	<nav class="navbar navbar-default" role="navigation">
-		<div class="navbar-header">
+		<div class="navbar-header">			
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-collapse">
 				<span class="sr-only">Toogle navigation</span>
 				<span class="icon-bar"></span>
@@ -9,8 +9,19 @@
 			</button>
 			<a href="" class="navbar-brand">
 				<strong>AGENDA DE SERVIÇOS</strong>
-			</a>				
+			</a>
 		</div>
+		<!-- User picture -->
+			<div id="userinfo" class="pull-right hidden-xs">
+				<a id="username" href="#">
+					<span class="glyphicon glyphicon-user"></span>
+					<span id="username">Eduardo</span>
+				</a>				
+				<a id="log-out" href="#">
+					<span class="glyphicon glyphicon-log-out"></span>
+					<span>Sair</span>
+				</a>	
+			</div>	
 
 			<div class="collapse navbar-collapse" id="nav-collapse">
 				<ul class="nav navbar-nav visible-xs-block">
