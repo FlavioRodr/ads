@@ -21,10 +21,10 @@
 			            </a>
 						<ul class="dropdown-menu" role="menu" aria-labelledby="dd-nav1">
 							<li role="presentation">
-								<a class="menu-item active" href="">Dados Pessoais</a>
+								<a class="menu-item active" href="dados_pessoais.php">Dados Pessoais</a>
 							</li>
 							<li role="presentation">
-								<a class="menu-item" href="">Endereços Cadastrados</a>
+								<a class="menu-item" href="enderecos_cadastrados.php">Endereços Cadastrados</a>
 							</li>
 							<li role="presentation">
 								<a class="menu-item" href="">Sair</a>

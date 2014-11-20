@@ -31,14 +31,15 @@
 			<div class="container-fluid">
 				<div class="row">
 					<ol class="breadcrumb">
-						<li><a href="">Minha Conta</a></li>
-						<li><a href="">Dados Pessoais</a></li>
+						<li>Minha Conta</li>
+						<li>Dados Pessoais</li>
 					</ol>		
 				</div>
 
 				<div class="row content">
-					<form class="form-horizontal" role="form">						
-						<div class="col-sm-5 col-lg-3">
+					<form class="form-horizontal" role="form">
+						<div class="container-fluid">
+							<div class="col-sm-5 col-lg-3">
 							<div class="form-group">
 								<label class="control-label" for="name">Nome</label> 		
 								<input id="email" class="form-control" name="name" type="text" required>
@@ -59,23 +60,23 @@
 
 							</div>
 							<div class="form-group">
-						<label class="control-label" for="phone">Telefone</label>
-						<input id="telefone" name="phone" class="form-control" type="text">							 					
-					</div>
-						</div>	
-						<div class="col-sm-5 col-sm-offset-1 col-lg-3">
-							<div class="form-group">
-						<label class="control-label" for="passwordFirst">Senha</label>
-						<input id="passwordFirst" name="passwordFirst" class="form-control" type="password"> 					
-					</div>
-
-					<div class="form-group">
-						<label class="control-label" for="passwordSecond">Repita a senha</label>
-						<input id="passwordSecond" name="passwordSecond" class="form-control" type="password">
-					</div>
+								<label class="control-label" for="phone">Telefone</label>
+								<input id="telefone" name="phone" class="form-control" type="text">							 					
+							</div>
 						</div>
 
+						<div class="col-sm-5 col-sm-offset-1 col-lg-3">
+							<div class="form-group">
+								<label class="control-label" for="passwordFirst">Senha</label>
+								<input id="passwordFirst" name="passwordFirst" class="form-control" type="password"> 					
+							</div>
 
+							<div class="form-group">
+								<label class="control-label" for="passwordSecond">Repita a senha</label>
+								<input id="passwordSecond" name="passwordSecond" class="form-control" type="password">
+							</div>
+						</div>
+						</div>
 					</form>					
 				</div>
 

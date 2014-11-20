@@ -8,11 +8,12 @@
 
 				<ul class="dropdown-menu" role="menu">
 					<li role="presentation">
-						<a href="#" role="menu-item" tabindex="-1">						
+						<a href="dados_pessoais.php" role="menu-item" tabindex="-1">						
 						Dados Pessoais
 						</a>
-						<a href="#" role="menu-item">
+						<a href="enderecos_cadastrados.php" role="menu-item">
 						Endereços cadastrados</a>
+						<a href="#" role="menu-item">Sair</a>
 					</li>
 				</ul>
 			</div>
@@ -21,7 +22,7 @@
 			<div class="dropdown">
 				<button id="dd-tab2" class="btn dropdown-toggle" type="button" data-toggle="dropdown">
 				<span class="glyphicon glyphicon-time"></span>
-				Marcar Horários<span class="caret"></span></button>
+				Marcar Horários <span class="caret"></span></button>
 
 				<ul class="dropdown-menu" role="menu">
 					<li role="presentation">
