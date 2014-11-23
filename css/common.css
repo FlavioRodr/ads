@@ -72,3 +72,12 @@ div[role="main"] .content {
 .panel.address .btn {
 	margin: -5px 5px 0 0;	
 } 
+
+#nav-control button#today, #nav-control button#next {
+	margin-right: 7px;
+}
+
+#nav-control button#add-small>span {
+	font-weight: bold;
+	color: #999999
+}

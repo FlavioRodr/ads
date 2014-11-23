@@ -50,6 +50,12 @@
 			opacity: 0.5;
 		}
 
+		@media (max-width: 768px) {
+			#load form input[type="submit"] {
+				margin-bottom: 15px;
+			}
+		}		
+
 	</style>
 
 </head>

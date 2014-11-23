@@ -32,9 +32,9 @@
 				</ul>
 			</div>
 		<li>
-			<button type="button" class="btn dropdown-toggle">
+			<button type="button" class="btn dropdown-toggle" onclick="window.location.href='servicos_agendados.php'">
 			<span class="glyphicon glyphicon-wrench"></span>
-			Serviços Agendados			
+			<span>Serviços Agendados</span>			
 			</button>
 		</li>
 	</ul>			
