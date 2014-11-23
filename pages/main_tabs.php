@@ -26,7 +26,7 @@
 
 				<ul class="dropdown-menu" role="menu">
 					<li role="presentation">
-						<a href="#" role="menu-item" tabindex="-1">Agendar Visitas</a>
+						<a href="agendar_visitas.php" role="menu-item" tabindex="-1">Agendar Visitas</a>
 						<a href="carga_horaria.php" role="menu-item">Carga Horária</a>
 					</li>
 				</ul>
