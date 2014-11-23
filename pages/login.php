@@ -25,6 +25,13 @@ var setFocusOn = function($elem) {
 		min-width: 32px;
 		max-width: 132px;
 	}	
+
+	.form-horizontal .form-group{
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+
 </style>
 
 </head>
@@ -84,7 +91,7 @@ var setFocusOn = function($elem) {
 	 											
 					<div class="form-group">
 			 			<label class="control-label" for="name">Nome</label>
-			 			<input id="name" name="name" class="form-control" type="text" maxlength="255"> 					
+			 			<input id="name" name="name" class="form-control" type="text" maxlength="255"> 				
 			 		</div>
 
 		 			<div class="form-group">

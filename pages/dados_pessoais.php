@@ -39,6 +39,7 @@
 				<div class="row content">
 					<form class="form-horizontal" role="form">
 						<div class="container-fluid">
+						<div class="clearfix">
 							<div class="col-sm-5 col-lg-3">
 							<div class="form-group">
 								<label class="control-label" for="name">Nome</label> 		
@@ -63,9 +64,9 @@
 								<label class="control-label" for="phone">Telefone</label>
 								<input id="telefone" name="phone" class="form-control" type="text">							 					
 							</div>
-						</div>
+							</div>
 
-						<div class="col-sm-5 col-sm-offset-1 col-lg-3">
+							<div class="col-sm-5 col-sm-offset-1 col-lg-3">
 							<div class="form-group">
 								<label class="control-label" for="passwordFirst">Senha</label>
 								<input id="passwordFirst" name="passwordFirst" class="form-control" type="password"> 					
@@ -75,7 +76,12 @@
 								<label class="control-label" for="passwordSecond">Repita a senha</label>
 								<input id="passwordSecond" name="passwordSecond" class="form-control" type="password">
 							</div>
-						</div>
+							</div>
+
+							</div>
+							<div class="row text-center">
+								<input type="submit" class="btn btn-default" value="Salvar">
+							</div>
 						</div>
 					</form>					
 				</div>

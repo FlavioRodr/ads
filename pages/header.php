@@ -48,10 +48,10 @@
 
 						<ul class="dropdown-menu" role="menu" aria-labelledby="dd-nav2">							
 							<li role="presentation">
-								<a class="menu-item" href="">Agendar Visitas</a>
+								<a class="menu-item" href="agendar_visitas.php">Agendar Visitas</a>
 							</li>
 							<li class="presentation">
-								<a class="menu-item" href="">Carga Horária</a>
+								<a class="menu-item" href="carga_horaria.php">Carga Horária</a>
 							</li>
 						</ul>
 					</li>
