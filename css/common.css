@@ -12,6 +12,10 @@ header .navbar-brand
 	background-position: 5px 2px;
 }
 
+header .navbar-header h5{
+	margin-top: 5px;
+}
+
 header #userinfo {
 	margin-top: 15px;
 	margin-right: 20px;
@@ -73,11 +77,3 @@ div[role="main"] .content {
 	margin: -5px 5px 0 0;	
 } 
 
-#nav-control button#today, #nav-control button#next {
-	margin-right: 7px;
-}
-
-#nav-control button#add-small>span {
-	font-weight: bold;
-	color: #999999
-}

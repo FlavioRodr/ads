@@ -8,7 +8,8 @@
 				<span class="icon-bar"></span>					
 			</button>
 			<a href="" class="navbar-brand">
-				<strong>AGENDA DE SERVIÇOS</strong>
+				<h5 class="visible-xs"><strong>AGENDA DE SERVIÇOS</strong></h5>
+				<strong class="hidden-xs">AGENDA DE SERVIÇOS</strong>
 			</a>
 		</div>
 		<!-- User picture -->
