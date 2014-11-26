@@ -36,6 +36,8 @@
 
 		<div id="load">		
 
+			<?php include("dialog_servico.php"); ?>
+
 			<div class="container-fluid">
 				<div class="row">
 					<ol class="breadcrumb">
@@ -43,11 +45,75 @@
 					</ol>		
 				</div>
 
-				<div class="row">
-					<button class="btn btn-success btn-sm"><span class="glyphicon glyphicon-ok"></span></button>
-					<button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-remove"></span></button>
-					<button class="btn btn-info btn-sm"><span class="glyphicon glyphicon-zoom-in"></span></button>
+				<div class="row" id="#scheduledEvents">
+					<div class="col-xs-12">
+						<div class="table-responsive">
+							<table class="table table-striped table-bordered">
+								<thead>
+									<tr>
+										<th>Data</th>
+										<th>Horário</th>
+										<th>Nome</th>
+										<th>Endereço</th>
+										<th>Bairro</th>
+										<th>Telefone</th>
+										<th>Status</th>
+										<th>Ações</th>	
+									</tr>									
+								</thead>
+								<tbody>
+									<tr>
+										<td>30/06/2014</td>
+										<td>15:00 às 16:00</td>
+										<td>Joao Augusto de Freitas</td>
+										<td>Rua dos Andradas nº 1650</td>
+										<td>Abadia</td>
+										<td>034 9219-0615</td>
+										<td><span class="text-warning">Aberto</span></td>
+										<td>
+											<button class="btn btn-success btn-sm" title="Pronto"><span class="glyphicon glyphicon-ok"></span></button>
+											<button class="btn btn-danger btn-sm" title="Cancelar"><span class="glyphicon glyphicon-remove"></span></button>
+											<button class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-edit-event" title="Visualizar">
+												<span class="glyphicon glyphicon-zoom-in"></span>
+											</button>
+										</td>
+									</tr>
+									<tr>
+										<td>29/06/2014</td>
+										<td>08:00 às 08:45</td>
+										<td>Pedro Geraldo de Souza</td>
+										<td>Rua Cascavel º 345</td>
+										<td>Gameleira</td>
+										<td>034 9956-3905</td>
+										<td><span class="text-success">Pronto</span></td>
+										<td>
+											<button class="btn btn-warning btn-sm" title="Reabrir"><span class="glyphicon glyphicon-repeat"></span></button>
+											<button class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-edit-event" title="Visualizar">
+												<span class="glyphicon glyphicon-zoom-in"></span>
+											</button>
+										</td>
+									</tr>
+									<tr>
+										<td>29/06/2014</td>
+										<td>08:00 às 08:45</td>
+										<td>Pedro Geraldo de Souza</td>
+										<td>Rua Dom Pedro I nº 105</td>
+										<td>Gameleira</td>
+										<td>034 9894-1469</td>
+										<td><span class="text-danger">Cancelado</span></td>
+										<td>
+											<button class="btn btn-warning btn-sm" title="Reabrir"><span class="glyphicon glyphicon-repeat"></span></button>
+											<button class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-edit-event" title="Visualizar">
+												<span class="glyphicon glyphicon-zoom-in"></span>
+											</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
 				</div>
+
 			</div>
 		</div>
 	</div>
