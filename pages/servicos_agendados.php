@@ -24,6 +24,31 @@
 			margin-right: 5px;
 		}
 
+		#nav-control{
+			margin-bottom: 15px;
+		}
+
+		#nav-control #today {
+			margin-right: 15px;
+		}
+
+		#nav-control form label{
+			margin-right: 7px;
+		}
+		
+		#nav-control form input#search {
+			
+		}		
+
+		form .form-group.inline .form-control {
+			display: inline-block;
+			width: auto;
+			vertical-align: middle;
+			margin-right: 0;
+			margin-left: 0;
+			margin-bottom: 0;
+		}
+
 	</style>
 
 </head>
@@ -45,7 +70,27 @@
 					</ol>		
 				</div>
 
-				<div class="row" id="#scheduledEvents">
+				<div class="row">
+					<div class="col-xs-12">
+						<div id="nav-control">							
+							<form class="form-inline">
+								<div class="form-group inline">
+									<button id="today" type="button" class="btn btn-default">Hoje</button>
+								</div>
+								
+								<div class="form-group inline">
+									<label for="search">Filtrar</label>
+									<input type="search" class="form-control" name="search" id="search" placeholder="Ex.: bairro, 01/01/2014">
+									<button type="submit" class="btn btn-default">
+										<span class="glyphicon glyphicon-search	"></span>
+									</button>	
+								</div>								
+							</form>									
+						</div>
+					</div>	
+				</div>
+
+				<div class="row" id="scheduledEvents">
 					<div class="col-xs-12">
 						<div class="table-responsive">
 							<table class="table table-striped table-bordered">
