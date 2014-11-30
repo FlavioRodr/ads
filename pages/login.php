@@ -63,8 +63,8 @@ var setFocusOn = function($elem) {
 	 		<div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
 	 			<form class="form-horizontal" role="form">
 	 				<div class="form-group">
-	 					<label class="control-label" for="email">Email</label>	 		
-	 					<input id="email" class="form-control" name="email" type="email" required>
+	 					<label class="control-label" for="email1">Email</label>	 		
+	 					<input id="email1" class="form-control" name="email" type="email" required>
 	 							
 	 				</div>	
 
@@ -106,14 +106,14 @@ var setFocusOn = function($elem) {
 					</div>
 
 					<div class="form-group">
-						<label class="control-label" for="cpf">Email</label>
-						<input id="email" name="email" class="form-control" type="email" >
+						<label class="control-label" for="email2">Email</label>
+						<input id="email2" name="email" class="form-control" type="email" >
 									
 					</div>
 
 					<div class="form-group">
 						<label class="control-label" for="phone">Telefone</label>
-						<input id="telefone" name="phone" class="form-control" type="text">							 					
+						<input id="phone" name="phone" class="form-control" type="tel">							 					
 					</div>
 
 					<div class="form-group">

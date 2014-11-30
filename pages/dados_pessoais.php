@@ -43,7 +43,7 @@
 							<div class="col-sm-5 col-lg-3">
 							<div class="form-group">
 								<label class="control-label" for="name">Nome</label> 		
-								<input id="email" class="form-control" name="name" type="text" required>
+								<input id="name" class="form-control" name="name" type="text" required>
 							</div>	
 							<div class="form-group">
 								<label class="control-label" for="surname">Sobrenome</label>	 		
@@ -56,13 +56,13 @@
 							</div>
 
 							<div class="form-group">
-								<label class="control-label" for="cpf">Email</label>
+								<label class="control-label" for="email">Email</label>
 								<input id="email" name="email" class="form-control" type="email" >
 
 							</div>
 							<div class="form-group">
 								<label class="control-label" for="phone">Telefone</label>
-								<input id="telefone" name="phone" class="form-control" type="text">							 					
+								<input id="phone" name="phone" class="form-control" type="tel">							 					
 							</div>
 							</div>
 
