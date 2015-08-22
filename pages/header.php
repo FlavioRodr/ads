@@ -1,6 +1,8 @@
 <header>
 	<nav class="navbar navbar-default" role="navigation">
-		<div class="navbar-header">			
+		<div class="container">
+			<div class="row">
+					<div class="navbar-header">			
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-collapse">
 				<span class="sr-only">Toogle navigation</span>
 				<span class="icon-bar"></span>
@@ -8,21 +10,21 @@
 				<span class="icon-bar"></span>					
 			</button>
 			<a href="" class="navbar-brand">
-				<h5 class="visible-xs"><strong>AGENDA DE SERVIÇOS</strong></h5>
-				<strong class="hidden-xs">AGENDA DE SERVIÇOS</strong>
+				Agenda de Serviços
 			</a>
 		</div>
+
 		<!-- User picture -->
-			<div id="userinfo" class="pull-right hidden-xs">
-				<a id="username" href="#">
+		<ul class="nav navbar-nav navbar-right hidden-xs" id="userInfo">
+            <li><a id="username" href="#">
 					<span class="glyphicon glyphicon-user"></span>
 					<span id="username">Eduardo</span>
-				</a>				
-				<a id="log-out" href="#">
+				</a></li>
+            <li><a id="log-out" href="#">
 					<span class="glyphicon glyphicon-log-out"></span>
 					<span>Sair</span>
-				</a>	
-			</div>	
+				</a></li>
+          </ul>
 
 			<div class="collapse navbar-collapse" id="nav-collapse">
 				<ul class="nav navbar-nav visible-xs-block">
@@ -62,5 +64,7 @@
 					</li>								
 				</ul>
 			</div>
+			</div>
+		</div>
 	</nav>
 </header>

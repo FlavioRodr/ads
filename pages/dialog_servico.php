@@ -117,8 +117,8 @@
 							</div>
 						</div>
 						<div class="modal-footer">
-							<button type="button" class="btn btn-default">Salvar</button>
-							<button type="button" class="btn btn-default" 
+							<button type="button" class="btn btn-success">Salvar</button>
+							<button type="button" class="btn btn-danger" 
 							data-dismiss="modal">
 							Cancelar
 						</button>

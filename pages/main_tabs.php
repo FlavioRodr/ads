@@ -1,8 +1,9 @@
-<div id="main-tabs" class="container-fluid hidden-xs">
-	<ul class="nav nav-pills nav-left">
+<div id="main-tabs" class="hidden-xs">
+	<div class="row">
+		<ul class="nav nav-pills nav-left">
 		<li class="active">
 			<div class="dropdown">
-				<button id="dd-tab1" class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+				<button id="dd-tab1" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
 				<span class="glyphicon glyphicon-user"></span>
 				Minha Conta <span class="caret"></span></button>
 
@@ -20,7 +21,7 @@
 		</li>
 		<li class="">
 			<div class="dropdown">
-				<button id="dd-tab2" class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+				<button id="dd-tab2" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
 				<span class="glyphicon glyphicon-time"></span>
 				Marcar Horários <span class="caret"></span></button>
 
@@ -32,10 +33,11 @@
 				</ul>
 			</div>
 		<li>
-			<button type="button" class="btn dropdown-toggle" onclick="window.location.href='servicos_agendados.php'">
+			<button type="button" class="btn btn-primary dropdown-toggle" onclick="window.location.href='servicos_agendados.php'">
 			<span class="glyphicon glyphicon-wrench"></span>
 			<span>Serviços Agendados</span>			
 			</button>
 		</li>
-	</ul>			
+	</ul>
+	</div>
 </div>

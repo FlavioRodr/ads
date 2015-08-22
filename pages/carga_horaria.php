@@ -5,7 +5,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/flatly/bootstrap.min.css">
 
 	<link rel="stylesheet" type="text/css" href="../css/common.css">
 
@@ -22,7 +22,7 @@
 		}
 
 		.table select{
-			max-width: 70px;
+			max-width: 80px;
 			display: inline;
 		}
 
@@ -64,10 +64,10 @@
 	<?php include("header.php"); ?>
 	
 	<div role="main">
-		<?php include("main_tabs.php"); ?>
+		<div class="container">
+			<?php include("main_tabs.php"); ?>
 
 		<div id="load">
-			<div class="container-fluid">
 				<div class="row">
 					<ol class="breadcrumb">
 						<li>Marcar Horários</li>
@@ -1343,7 +1343,7 @@
 						<input type="submit" class="btn btn-default" value="Salvar">	
 					</div>
 				</form>
-			</div>
+		</div>
 		</div>
 	</div>
 

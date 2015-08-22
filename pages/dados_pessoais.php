@@ -5,7 +5,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/flatly/bootstrap.min.css">
 
 	<link rel="stylesheet" type="text/css" href="../css/common.css">
 
@@ -25,20 +25,21 @@
 	<?php include("header.php"); ?>
 	
 	<div role="main">
-		<?php include("main_tabs.php"); ?>
+		<div class="container">
+			<?php include("main_tabs.php"); ?>
 
-		<div id="load">
-			<div class="container-fluid">
-				<div class="row">
+			<div id="load">
+					<div class="row">
 					<ol class="breadcrumb">
 						<li>Minha Conta</li>
 						<li>Dados Pessoais</li>
-					</ol>		
-				</div>
+					</ol>	
+					</div>
 
 				<div class="row content">
-					<form class="form-horizontal" role="form">
-						<div class="container-fluid">
+					<div class="col-xs-12">
+						<form class="form-horizontal" role="form">
+					
 						<div class="clearfix">
 							<div class="col-sm-5 col-lg-3">
 							<div class="form-group">
@@ -82,12 +83,14 @@
 							<div class="row text-center">
 								<input type="submit" class="btn btn-default" value="Salvar">
 							</div>
-						</div>
-					</form>					
-				</div>
-
+						
+					</form>	
+					</div>
+				</div>								
+				
+				
 			</div>
-		</div>
+		</div>		
 	</div>
 
 </body>

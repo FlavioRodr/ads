@@ -5,7 +5,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/flatly/bootstrap.min.css">
 
 	<link rel="stylesheet" type="text/css" href="../css/common.css">
 
@@ -57,13 +57,13 @@
 	<?php include("header.php"); ?>
 	
 	<div role="main">
-		<?php include("main_tabs.php"); ?>
+		<div class="container">
+			<?php include("main_tabs.php"); ?>
 
 		<div id="load">		
 
 			<?php include("dialog_servico.php"); ?>
 
-			<div class="container-fluid">
 				<div class="row">
 					<ol class="breadcrumb">
 						<li>Serviços Agendados</li>
@@ -90,7 +90,7 @@
 					</div>	
 				</div>
 
-				<div class="row" id="scheduledEvents">
+				<div class="row content" id="scheduledEvents">
 					<div class="col-xs-12">
 						<div class="table-responsive">
 							<table class="table table-striped table-bordered">

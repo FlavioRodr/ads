@@ -5,7 +5,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/flatly/bootstrap.min.css">
 
 	<link rel="stylesheet" type="text/css" href="../css/common.css">
 
@@ -63,11 +63,6 @@
 			margin-right: 7px;
 		}
 
-		#nav-control button#add-small>span {
-			font-weight: bold;
-			color: #999999
-		}
-
 		.modal-dialog {
 			z-index: 20;
 		}
@@ -111,12 +106,12 @@
 	<?php include("header.php"); ?>
 	
 	<div role="main">
+	<div class="container">
 		<?php include("main_tabs.php"); ?>
 
 		<div id="load">	
 			<?php include("dialog_servico.php"); ?>
 
-		<div class="container-fluid">
 			<div class="row">
 				<ol class="breadcrumb">
 					<li>Marcar Horários</li>
@@ -125,8 +120,7 @@
 			</div>	
 
 			<div class="row">
-				<div id="col-xs-12">
-					<div class="container-fluid">
+				<div class="col-xs-12">
 						<div id="nav-control">
 							<button id="today" type="button" class="btn btn-default">Hoje</button>
 							<button id="prev" type="button" class="btn btn-default"> < </button>
@@ -140,13 +134,11 @@
 								type="button" class="btn btn-default pull-right visible-xs">
 								<span>+</span>
 							</button>
-						</div>							
-					</div>											
+						</div>										
 				</div>
 			</div>	
 
 			<div class="row hidden-xs">
-				<div class="container-fluid">
 					<div class="table-responsive">
 						<table id="schedule" class="table table-striped table-bordered">
 							<thead>
@@ -265,8 +257,7 @@
 								</tr>					
 							</tbody>
 						</table>
-					</div>
-				</div>										
+					</div>									
 			</div>
 
 			<div class="row visible-xs-block">
@@ -347,7 +338,8 @@
 
 		</div>
 	</div>
-</div>
+		
+	</div>
 
 <script type="text/javascript">
 
