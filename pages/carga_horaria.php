@@ -40,6 +40,7 @@
 
 		table.inner-table {
 			width: 100%;
+			min-width: 375px;
 		}
 
 		table.inner-table tr td {
@@ -76,8 +77,9 @@
 				</div>
 
 				<form>
-					<div class="row">					
-						<div class="table-responsive">
+					<div class="row">	
+						<div class="col-xs-12">
+							<div class="table-responsive">
 							<table id="schedule" class="table table-striped table-bordered">
 								<thead>
 									<tr>
@@ -1337,7 +1339,8 @@
 									</tr>
 								</tbody>
 							</table>
-						</div>								
+						</div>	
+						</div>						
 					</div>
 					<div class="row text-center">
 						<input type="submit" class="btn btn-default" value="Salvar">	

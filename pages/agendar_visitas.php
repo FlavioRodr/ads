@@ -139,6 +139,7 @@
 			</div>	
 
 			<div class="row hidden-xs">
+				<div class="col-xs-12">
 					<div class="table-responsive">
 						<table id="schedule" class="table table-striped table-bordered">
 							<thead>
@@ -257,7 +258,8 @@
 								</tr>					
 							</tbody>
 						</table>
-					</div>									
+					</div>
+				</div>									
 			</div>
 
 			<div class="row visible-xs-block">

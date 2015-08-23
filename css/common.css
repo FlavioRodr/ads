@@ -2,6 +2,10 @@
 	overflow: hidden;
 }
 
+#load {
+	margin-bottom: 15px;
+}
+
 header .navbar-header h5{
 	margin-top: 5px;
 }
@@ -74,3 +78,5 @@ header .navbar.navbar-default {
 	margin-left: 0;
 	margin-bottom: 0;
 }
+
+@media(width: )
