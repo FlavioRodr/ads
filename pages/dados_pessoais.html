@@ -22,11 +22,13 @@
 </head>
 <body>
 	
-	<?php include("header.php"); ?>
+	<!-- Ajax call to header.html -->
+	<div data-partial="header.html"></div>
 	
 	<div role="main">
 		<div class="container">
-			<?php include("main_tabs.php"); ?>
+			<!-- Ajax call to main_tabs.html -->
+			<div data-partial="main_tabs.html"></div>
 
 			<div id="load">
 					<div class="row">
@@ -92,6 +94,6 @@
 			</div>
 		</div>		
 	</div>
-
+	<script src="/js/init.js"></script>
 </body>
 </html>

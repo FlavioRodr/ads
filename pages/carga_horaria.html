@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8" />
 
@@ -21,12 +22,13 @@
 			text-align: center;
 		}
 
-		.table select{
+		.table select {
 			max-width: 80px;
 			display: inline;
 		}
 
-		.table>thead>tr>th, .table>tbody>tr>td {
+		.table>thead>tr>th,
+		.table>tbody>tr>td {
 			vertical-align: middle;
 		}
 
@@ -55,51 +57,53 @@
 			#load form input[type="submit"] {
 				margin-bottom: 15px;
 			}
-		}		
-
+		}
 	</style>
 
 </head>
+
 <body>
-	
-	<?php include("header.php"); ?>
-	
+
+	<!-- Ajax call to header.html -->
+	<div data-partial="header.html"></div>
+
 	<div role="main">
 		<div class="container">
-			<?php include("main_tabs.php"); ?>
+			<!-- Ajax call to main_tabs.html -->
+			<div data-partial="main_tabs.html"></div>
 
-		<div id="load">
+			<div id="load">
 				<div class="row">
 					<ol class="breadcrumb">
 						<li>Marcar Horários</li>
 						<li>Carga Horária</li>
-					</ol>		
+					</ol>
 				</div>
 
 				<form>
-					<div class="row">	
+					<div class="row">
 						<div class="col-xs-12">
 							<div class="table-responsive">
-							<table id="schedule" class="table table-striped table-bordered">
-								<thead>
-									<tr>
-										<th></th>								
-										<th>Dia da Semana</th>
-										<th>Períodos</th>
-										<th>Tempo Médio</th>
-										<th>Máx. de Visitas</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr class="disabled">
-										<td><input type="checkbox" name="monday"></td>
-										<td>Domingo</td>
-										<td>
-											<div>
-												<table class="inner-table">
-													<tr>
-														<td>
-															<select class="form-control" disabled>
+								<table id="schedule" class="table table-striped table-bordered">
+									<thead>
+										<tr>
+											<th></th>
+											<th>Dia da Semana</th>
+											<th>Períodos</th>
+											<th>Tempo Médio</th>
+											<th>Máx. de Visitas</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="disabled">
+											<td><input type="checkbox" name="monday"></td>
+											<td>Domingo</td>
+											<td>
+												<div>
+													<table class="inner-table">
+														<tr>
+															<td>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="01">01</option>
 																<option value="02">02</option>
@@ -126,15 +130,15 @@
 																<option value="23">23</option>
 																<option value="24">24</option>
 															</select>
-															<span>:</span>
-															<select class="form-control" disabled>
+																<span>:</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="15">15</option>
 																<option value="30">30</option>
 																<option value="45">45</option>
 															</select>
-															<span>&nbspAté&nbsp</span>
-															<select class="form-control" disabled>
+																<span>&nbspAté&nbsp</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="01">01</option>
 																<option value="02">02</option>
@@ -161,18 +165,18 @@
 																<option value="23">23</option>
 																<option value="24">24</option>
 															</select>
-															<span>:</span>
-															<select class="form-control" disabled>
+																<span>:</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="15">15</option>
 																<option value="30">30</option>
 																<option value="45">45</option>
 															</select>
-														</td>
-													</tr>
-													<tr>
-														<td>
-															<select class="form-control" disabled>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="01">01</option>
 																<option value="02">02</option>
@@ -199,15 +203,15 @@
 																<option value="23">23</option>
 																<option value="24">24</option>
 															</select>
-															<span>:</span>
-															<select class="form-control" disabled>
+																<span>:</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="15">15</option>
 																<option value="30">30</option>
 																<option value="45">45</option>
 															</select>
-															<span>&nbspAté&nbsp</span>
-															<select class="form-control" disabled>
+																<span>&nbspAté&nbsp</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="01">01</option>
 																<option value="02">02</option>
@@ -234,20 +238,20 @@
 																<option value="23">23</option>
 																<option value="24">24</option>
 															</select>
-															<span>:</span>
-															<select class="form-control" disabled>
+																<span>:</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="15">15</option>
 																<option value="30">30</option>
 																<option value="45">45</option>
-															</select>												
-														</td>
-													</tr>
-												</table>
-											</div>									
-										</td>
-										<td>
-											<select class="form-control" disabled>
+															</select>
+															</td>
+														</tr>
+													</table>
+												</div>
+											</td>
+											<td>
+												<select class="form-control" disabled>
 												<option>00</option>
 												<option>01</option>
 												<option>02</option>
@@ -260,24 +264,24 @@
 												<option>09</option>
 												<option>10</option>
 											</select>
-											<span>:</span>
-											<select class="form-control" disabled>
+												<span>:</span>
+												<select class="form-control" disabled>
 												<option>15</option>
 												<option>30</option>
 												<option>45</option>
 											</select>
-										</td>
-										<td><input type="text" name="maxNumber" class="form-control" disabled></td>
-									</tr>
-									<tr class="disabled">
-										<td><input type="checkbox" name="monday"></td>
-										<td>Segunda</td>
-										<td>
-											<div>
-												<table class="inner-table">
-													<tr>
-														<td>
-															<select class="form-control" disabled>
+											</td>
+											<td><input type="text" name="maxNumber" class="form-control" disabled></td>
+										</tr>
+										<tr class="disabled">
+											<td><input type="checkbox" name="monday"></td>
+											<td>Segunda</td>
+											<td>
+												<div>
+													<table class="inner-table">
+														<tr>
+															<td>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="01">01</option>
 																<option value="02">02</option>
@@ -304,15 +308,15 @@
 																<option value="23">23</option>
 																<option value="24">24</option>
 															</select>
-															<span>:</span>
-															<select class="form-control" disabled>
+																<span>:</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="15">15</option>
 																<option value="30">30</option>
 																<option value="45">45</option>
 															</select>
-															<span>&nbspAté&nbsp</span>
-															<select class="form-control" disabled>
+																<span>&nbspAté&nbsp</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="01">01</option>
 																<option value="02">02</option>
@@ -339,18 +343,18 @@
 																<option value="23">23</option>
 																<option value="24">24</option>
 															</select>
-															<span>:</span>
-															<select class="form-control" disabled>
+																<span>:</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="15">15</option>
 																<option value="30">30</option>
 																<option value="45">45</option>
 															</select>
-														</td>
-													</tr>
-													<tr>
-														<td>
-															<select class="form-control" disabled>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="01">01</option>
 																<option value="02">02</option>
@@ -377,15 +381,15 @@
 																<option value="23">23</option>
 																<option value="24">24</option>
 															</select>
-															<span>:</span>
-															<select class="form-control" disabled>
+																<span>:</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="15">15</option>
 																<option value="30">30</option>
 																<option value="45">45</option>
 															</select>
-															<span>&nbspAté&nbsp</span>
-															<select class="form-control" disabled>
+																<span>&nbspAté&nbsp</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="01">01</option>
 																<option value="02">02</option>
@@ -412,20 +416,20 @@
 																<option value="23">23</option>
 																<option value="24">24</option>
 															</select>
-															<span>:</span>
-															<select class="form-control" disabled>
+																<span>:</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="15">15</option>
 																<option value="30">30</option>
 																<option value="45">45</option>
-															</select>												
-														</td>
-													</tr>
-												</table>
-											</div>									
-										</td>
-										<td>
-											<select class="form-control" disabled>
+															</select>
+															</td>
+														</tr>
+													</table>
+												</div>
+											</td>
+											<td>
+												<select class="form-control" disabled>
 												<option>00</option>
 												<option>01</option>
 												<option>02</option>
@@ -438,24 +442,24 @@
 												<option>09</option>
 												<option>10</option>
 											</select>
-											<span>:</span>
-											<select class="form-control" disabled>
+												<span>:</span>
+												<select class="form-control" disabled>
 												<option>15</option>
 												<option>30</option>
 												<option>45</option>
 											</select>
-										</td>
-										<td><input type="text" name="maxNumber" class="form-control" disabled></td>
-									</tr>
-									<tr class="disabled">
-										<td><input type="checkbox" name="monday"></td>
-										<td>Terça</td>
-										<td>
-											<div>
-												<table class="inner-table">
-													<tr>
-														<td>
-															<select class="form-control" disabled>
+											</td>
+											<td><input type="text" name="maxNumber" class="form-control" disabled></td>
+										</tr>
+										<tr class="disabled">
+											<td><input type="checkbox" name="monday"></td>
+											<td>Terça</td>
+											<td>
+												<div>
+													<table class="inner-table">
+														<tr>
+															<td>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="01">01</option>
 																<option value="02">02</option>
@@ -482,15 +486,15 @@
 																<option value="23">23</option>
 																<option value="24">24</option>
 															</select>
-															<span>:</span>
-															<select class="form-control" disabled>
+																<span>:</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="15">15</option>
 																<option value="30">30</option>
 																<option value="45">45</option>
 															</select>
-															<span>&nbspAté&nbsp</span>
-															<select class="form-control" disabled>
+																<span>&nbspAté&nbsp</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="01">01</option>
 																<option value="02">02</option>
@@ -517,18 +521,18 @@
 																<option value="23">23</option>
 																<option value="24">24</option>
 															</select>
-															<span>:</span>
-															<select class="form-control" disabled>
+																<span>:</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="15">15</option>
 																<option value="30">30</option>
 																<option value="45">45</option>
 															</select>
-														</td>
-													</tr>
-													<tr>
-														<td>
-															<select class="form-control" disabled>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="01">01</option>
 																<option value="02">02</option>
@@ -555,15 +559,15 @@
 																<option value="23">23</option>
 																<option value="24">24</option>
 															</select>
-															<span>:</span>
-															<select class="form-control" disabled>
+																<span>:</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="15">15</option>
 																<option value="30">30</option>
 																<option value="45">45</option>
 															</select>
-															<span>&nbspAté&nbsp</span>
-															<select class="form-control" disabled>
+																<span>&nbspAté&nbsp</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="01">01</option>
 																<option value="02">02</option>
@@ -590,20 +594,20 @@
 																<option value="23">23</option>
 																<option value="24">24</option>
 															</select>
-															<span>:</span>
-															<select class="form-control" disabled>
+																<span>:</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="15">15</option>
 																<option value="30">30</option>
 																<option value="45">45</option>
-															</select>												
-														</td>
-													</tr>
-												</table>
-											</div>									
-										</td>
-										<td>
-											<select class="form-control" disabled>
+															</select>
+															</td>
+														</tr>
+													</table>
+												</div>
+											</td>
+											<td>
+												<select class="form-control" disabled>
 												<option>00</option>
 												<option>01</option>
 												<option>02</option>
@@ -616,24 +620,24 @@
 												<option>09</option>
 												<option>10</option>
 											</select>
-											<span>:</span>
-											<select class="form-control" disabled>
+												<span>:</span>
+												<select class="form-control" disabled>
 												<option>15</option>
 												<option>30</option>
 												<option>45</option>
 											</select>
-										</td>
-										<td><input type="text" name="maxNumber" class="form-control" disabled></td>
-									</tr>
-									<tr class="disabled">
-										<td><input type="checkbox" name="monday"></td>
-										<td>Quarta</td>
-										<td>
-											<div>
-												<table class="inner-table">
-													<tr>
-														<td>
-															<select class="form-control" disabled>
+											</td>
+											<td><input type="text" name="maxNumber" class="form-control" disabled></td>
+										</tr>
+										<tr class="disabled">
+											<td><input type="checkbox" name="monday"></td>
+											<td>Quarta</td>
+											<td>
+												<div>
+													<table class="inner-table">
+														<tr>
+															<td>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="01">01</option>
 																<option value="02">02</option>
@@ -660,15 +664,15 @@
 																<option value="23">23</option>
 																<option value="24">24</option>
 															</select>
-															<span>:</span>
-															<select class="form-control" disabled>
+																<span>:</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="15">15</option>
 																<option value="30">30</option>
 																<option value="45">45</option>
 															</select>
-															<span>&nbspAté&nbsp</span>
-															<select class="form-control" disabled>
+																<span>&nbspAté&nbsp</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="01">01</option>
 																<option value="02">02</option>
@@ -695,18 +699,18 @@
 																<option value="23">23</option>
 																<option value="24">24</option>
 															</select>
-															<span>:</span>
-															<select class="form-control" disabled>
+																<span>:</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="15">15</option>
 																<option value="30">30</option>
 																<option value="45">45</option>
 															</select>
-														</td>
-													</tr>
-													<tr>
-														<td>
-															<select class="form-control" disabled>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="01">01</option>
 																<option value="02">02</option>
@@ -733,15 +737,15 @@
 																<option value="23">23</option>
 																<option value="24">24</option>
 															</select>
-															<span>:</span>
-															<select class="form-control" disabled>
+																<span>:</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="15">15</option>
 																<option value="30">30</option>
 																<option value="45">45</option>
 															</select>
-															<span>&nbspAté&nbsp</span>
-															<select class="form-control" disabled>
+																<span>&nbspAté&nbsp</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="01">01</option>
 																<option value="02">02</option>
@@ -768,20 +772,20 @@
 																<option value="23">23</option>
 																<option value="24">24</option>
 															</select>
-															<span>:</span>
-															<select class="form-control" disabled>
+																<span>:</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="15">15</option>
 																<option value="30">30</option>
 																<option value="45">45</option>
-															</select>												
-														</td>
-													</tr>
-												</table>
-											</div>									
-										</td>
-										<td>
-											<select class="form-control" disabled>
+															</select>
+															</td>
+														</tr>
+													</table>
+												</div>
+											</td>
+											<td>
+												<select class="form-control" disabled>
 												<option>00</option>
 												<option>01</option>
 												<option>02</option>
@@ -794,24 +798,24 @@
 												<option>09</option>
 												<option>10</option>
 											</select>
-											<span>:</span>
-											<select class="form-control" disabled>
+												<span>:</span>
+												<select class="form-control" disabled>
 												<option>15</option>
 												<option>30</option>
 												<option>45</option>
 											</select>
-										</td>
-										<td><input type="text" name="maxNumber" class="form-control" disabled></td>
-									</tr>
-									<tr class="disabled">
-										<td><input type="checkbox" name="monday"></td>
-										<td>Quinta</td>
-										<td>
-											<div>
-												<table class="inner-table">
-													<tr>
-														<td>
-															<select class="form-control" disabled>
+											</td>
+											<td><input type="text" name="maxNumber" class="form-control" disabled></td>
+										</tr>
+										<tr class="disabled">
+											<td><input type="checkbox" name="monday"></td>
+											<td>Quinta</td>
+											<td>
+												<div>
+													<table class="inner-table">
+														<tr>
+															<td>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="01">01</option>
 																<option value="02">02</option>
@@ -838,15 +842,15 @@
 																<option value="23">23</option>
 																<option value="24">24</option>
 															</select>
-															<span>:</span>
-															<select class="form-control" disabled>
+																<span>:</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="15">15</option>
 																<option value="30">30</option>
 																<option value="45">45</option>
 															</select>
-															<span>&nbspAté&nbsp</span>
-															<select class="form-control" disabled>
+																<span>&nbspAté&nbsp</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="01">01</option>
 																<option value="02">02</option>
@@ -873,18 +877,18 @@
 																<option value="23">23</option>
 																<option value="24">24</option>
 															</select>
-															<span>:</span>
-															<select class="form-control" disabled>
+																<span>:</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="15">15</option>
 																<option value="30">30</option>
 																<option value="45">45</option>
 															</select>
-														</td>
-													</tr>
-													<tr>
-														<td>
-															<select class="form-control" disabled>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="01">01</option>
 																<option value="02">02</option>
@@ -911,15 +915,15 @@
 																<option value="23">23</option>
 																<option value="24">24</option>
 															</select>
-															<span>:</span>
-															<select class="form-control" disabled>
+																<span>:</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="15">15</option>
 																<option value="30">30</option>
 																<option value="45">45</option>
 															</select>
-															<span>&nbspAté&nbsp</span>
-															<select class="form-control" disabled>
+																<span>&nbspAté&nbsp</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="01">01</option>
 																<option value="02">02</option>
@@ -946,20 +950,20 @@
 																<option value="23">23</option>
 																<option value="24">24</option>
 															</select>
-															<span>:</span>
-															<select class="form-control" disabled>
+																<span>:</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="15">15</option>
 																<option value="30">30</option>
 																<option value="45">45</option>
-															</select>												
-														</td>
-													</tr>
-												</table>
-											</div>									
-										</td>
-										<td>
-											<select class="form-control" disabled>
+															</select>
+															</td>
+														</tr>
+													</table>
+												</div>
+											</td>
+											<td>
+												<select class="form-control" disabled>
 												<option>00</option>
 												<option>01</option>
 												<option>02</option>
@@ -972,24 +976,24 @@
 												<option>09</option>
 												<option>10</option>
 											</select>
-											<span>:</span>
-											<select class="form-control" disabled>
+												<span>:</span>
+												<select class="form-control" disabled>
 												<option>15</option>
 												<option>30</option>
 												<option>45</option>
 											</select>
-										</td>
-										<td><input type="text" name="maxNumber" class="form-control" disabled></td>
-									</tr>
-									<tr class="disabled">
-										<td><input type="checkbox" name="monday"></td>
-										<td>Sexta</td>
-										<td>
-											<div>
-												<table class="inner-table">
-													<tr>
-														<td>
-															<select class="form-control" disabled>
+											</td>
+											<td><input type="text" name="maxNumber" class="form-control" disabled></td>
+										</tr>
+										<tr class="disabled">
+											<td><input type="checkbox" name="monday"></td>
+											<td>Sexta</td>
+											<td>
+												<div>
+													<table class="inner-table">
+														<tr>
+															<td>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="01">01</option>
 																<option value="02">02</option>
@@ -1016,15 +1020,15 @@
 																<option value="23">23</option>
 																<option value="24">24</option>
 															</select>
-															<span>:</span>
-															<select class="form-control" disabled>
+																<span>:</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="15">15</option>
 																<option value="30">30</option>
 																<option value="45">45</option>
 															</select>
-															<span>&nbspAté&nbsp</span>
-															<select class="form-control" disabled>
+																<span>&nbspAté&nbsp</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="01">01</option>
 																<option value="02">02</option>
@@ -1051,18 +1055,18 @@
 																<option value="23">23</option>
 																<option value="24">24</option>
 															</select>
-															<span>:</span>
-															<select class="form-control" disabled>
+																<span>:</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="15">15</option>
 																<option value="30">30</option>
 																<option value="45">45</option>
 															</select>
-														</td>
-													</tr>
-													<tr>
-														<td>
-															<select class="form-control" disabled>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="01">01</option>
 																<option value="02">02</option>
@@ -1089,15 +1093,15 @@
 																<option value="23">23</option>
 																<option value="24">24</option>
 															</select>
-															<span>:</span>
-															<select class="form-control" disabled>
+																<span>:</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="15">15</option>
 																<option value="30">30</option>
 																<option value="45">45</option>
 															</select>
-															<span>&nbspAté&nbsp</span>
-															<select class="form-control" disabled>
+																<span>&nbspAté&nbsp</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="01">01</option>
 																<option value="02">02</option>
@@ -1124,20 +1128,20 @@
 																<option value="23">23</option>
 																<option value="24">24</option>
 															</select>
-															<span>:</span>
-															<select class="form-control" disabled>
+																<span>:</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="15">15</option>
 																<option value="30">30</option>
 																<option value="45">45</option>
-															</select>												
-														</td>
-													</tr>
-												</table>
-											</div>									
-										</td>
-										<td>
-											<select class="form-control" disabled>
+															</select>
+															</td>
+														</tr>
+													</table>
+												</div>
+											</td>
+											<td>
+												<select class="form-control" disabled>
 												<option>00</option>
 												<option>01</option>
 												<option>02</option>
@@ -1150,24 +1154,24 @@
 												<option>09</option>
 												<option>10</option>
 											</select>
-											<span>:</span>
-											<select class="form-control" disabled>
+												<span>:</span>
+												<select class="form-control" disabled>
 												<option>15</option>
 												<option>30</option>
 												<option>45</option>
 											</select>
-										</td>
-										<td><input type="text" name="maxNumber" class="form-control" disabled></td>
-									</tr>
-									<tr class="disabled">
-										<td><input type="checkbox" name="monday"></td>
-										<td>Sábado</td>
-										<td>
-											<div>
-												<table class="inner-table">
-													<tr>
-														<td>
-															<select class="form-control" disabled>
+											</td>
+											<td><input type="text" name="maxNumber" class="form-control" disabled></td>
+										</tr>
+										<tr class="disabled">
+											<td><input type="checkbox" name="monday"></td>
+											<td>Sábado</td>
+											<td>
+												<div>
+													<table class="inner-table">
+														<tr>
+															<td>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="01">01</option>
 																<option value="02">02</option>
@@ -1194,15 +1198,15 @@
 																<option value="23">23</option>
 																<option value="24">24</option>
 															</select>
-															<span>:</span>
-															<select class="form-control" disabled>
+																<span>:</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="15">15</option>
 																<option value="30">30</option>
 																<option value="45">45</option>
 															</select>
-															<span>&nbspAté&nbsp</span>
-															<select class="form-control" disabled>
+																<span>&nbspAté&nbsp</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="01">01</option>
 																<option value="02">02</option>
@@ -1229,18 +1233,18 @@
 																<option value="23">23</option>
 																<option value="24">24</option>
 															</select>
-															<span>:</span>
-															<select class="form-control" disabled>
+																<span>:</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="15">15</option>
 																<option value="30">30</option>
 																<option value="45">45</option>
 															</select>
-														</td>
-													</tr>
-													<tr>
-														<td>
-															<select class="form-control" disabled>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="01">01</option>
 																<option value="02">02</option>
@@ -1267,15 +1271,15 @@
 																<option value="23">23</option>
 																<option value="24">24</option>
 															</select>
-															<span>:</span>
-															<select class="form-control" disabled>
+																<span>:</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="15">15</option>
 																<option value="30">30</option>
 																<option value="45">45</option>
 															</select>
-															<span>&nbspAté&nbsp</span>
-															<select class="form-control" disabled>
+																<span>&nbspAté&nbsp</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="01">01</option>
 																<option value="02">02</option>
@@ -1302,20 +1306,20 @@
 																<option value="23">23</option>
 																<option value="24">24</option>
 															</select>
-															<span>:</span>
-															<select class="form-control" disabled>
+																<span>:</span>
+																<select class="form-control" disabled>
 																<option value="00">00</option>
 																<option value="15">15</option>
 																<option value="30">30</option>
 																<option value="45">45</option>
-															</select>												
-														</td>
-													</tr>
-												</table>
-											</div>									
-										</td>
-										<td>
-											<select class="form-control" disabled>
+															</select>
+															</td>
+														</tr>
+													</table>
+												</div>
+											</td>
+											<td>
+												<select class="form-control" disabled>
 												<option>00</option>
 												<option>01</option>
 												<option>02</option>
@@ -1328,42 +1332,43 @@
 												<option>09</option>
 												<option>10</option>
 											</select>
-											<span>:</span>
-											<select class="form-control" disabled>
+												<span>:</span>
+												<select class="form-control" disabled>
 												<option>15</option>
 												<option>30</option>
 												<option>45</option>
 											</select>
-										</td>
-										<td><input type="text" name="maxNumber" class="form-control" disabled></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>	
-						</div>						
+											</td>
+											<td><input type="text" name="maxNumber" class="form-control" disabled></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
 					</div>
 					<div class="row text-center">
-						<input type="submit" class="btn btn-default" value="Salvar">	
+						<input type="submit" class="btn btn-default" value="Salvar">
 					</div>
 				</form>
-		</div>
+			</div>
 		</div>
 	</div>
+	<script src="/js/init.js"></script>
+	<script type="text/javascript">
+		$("table#schedule").find("tbody").find("td:nth-child(1)").find("input").change(function () {
 
+			if (this.checked) {
+				$(this).parents("tr").removeClass("disabled");
+				$(this).parents("tr").find("select").prop("disabled", false);
+			}
+			else {
+				$(this).parents("tr").addClass("disabled");
+				$(this).parents("tr").find("select").prop("disabled", true);
+				$(this).parents("tr").find("td:nth-child(1)").find("input").prop("disabled", false);
+			}
+		});
+
+	</script>
 </body>
 
-<script type="text/javascript">
-	$("table#schedule").find("tbody").find("td:nth-child(1)").find("input").change(function(){
-
-		if (this.checked) {
-			$(this).parents("tr").removeClass("disabled");
-			$(this).parents("tr").find("select").prop("disabled", false);
-		}		
-		else {
-			$(this).parents("tr").addClass("disabled");
-			$(this).parents("tr").find("select").prop("disabled", true);
-			$(this).parents("tr").find("td:nth-child(1)").find("input").prop("disabled", false);
-		}		
-	});
-</script>
 </html>
