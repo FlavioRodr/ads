@@ -1,6 +1,6 @@
 # Agenda de Serviços (Services Agenda)
 
-Web app for a small computer repairs store intended to manage and control the provided external services 
+Web app intended to manage and control the provided external services of a small computer repairs store.
 
 ## Installation
 Simply clone the project (for now!).
