@@ -1,4 +1,4 @@
-# Agenda de Serviços (Services Agenda)
+#  Computer Repair Services
 
 Web app intended to manage and control the provided external services of a small computer repairs store.
 
